@@ -20,13 +20,13 @@ If you wish to specify a package mirror, this is possibly via the `pypi_url` and
 
 ## Example usage
 
-There's an example repository where you can see this action in action: <https://github.com/JackMcKew/pyinstaller-action-windows-example>. Where you can find the packaged executable at: <https://github.com/JackMcKew/pyinstaller-action-windows-example/actions/runs/135879475>.
+There's an example repository where you can see this action in action: <https://github.com/vednig/pyinstaller-action-windows-example>. Where you can find the packaged executable at: <https://github.com/vednig/pyinstaller-action-windows-example/actions/runs/135879475>.
 
 Include this in your `.github/workflows/main.yaml`:
 
 ```yaml
 - name: PyInstaller Windows
-  uses: JackMcKew/pyinstaller-action-windows@main
+  uses: vednig/pyinstaller-action-windows@main
     with:
       path: src
 ```
@@ -57,7 +57,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Package Application
-      uses: JackMcKew/pyinstaller-action-windows@main
+      uses: vednig/pyinstaller-action-windows@main
       with:
         path: src
 
